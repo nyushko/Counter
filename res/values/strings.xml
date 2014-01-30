@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">nyushko-counter</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="increment_counter">COUNTERS</string>
+    <string name="add_counter">ADD COUNTER</string>
+    <string name="remove_counter">REMOVE COUNTER</string>
+    <string name="edit_counter">EDIT COUNTER</string>
+    <string name="reset_counter">RESET COUNTER</string>
+    <string name="results">RESULTS</string>
+    <string name="title_activity_add_counter">AddCounterActivity</string>
+    <string name="title_activity_remove_counter">Remove_counter</string>
+    <string name="title_activity_edit_counter">Edit_counter</string>
+    <string name="title_activity_reset_counter">Reset_counter</string>
+    <string name="title_activity_results">Results</string>
+    <string name="title_activity_counters">Counters</string>
+    <string name="title_activity_all_counters">All_counters</string>
+    <string name="title_activity_save_data">Save_data</string>
+
+</resources>

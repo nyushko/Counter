@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.counter"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.counter.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.counter.AddCounterActivity"
+            android:label="@string/title_activity_add_counter" >
+        </activity>
+        <activity
+            android:name="com.example.counter.Remove_counter"
+            android:label="@string/title_activity_remove_counter" >
+        </activity>
+        <activity
+            android:name="com.example.counter.Edit_counter"
+            android:label="@string/title_activity_edit_counter" >
+        </activity>
+        <activity
+            android:name="com.example.counter.Reset_counter"
+            android:label="@string/title_activity_reset_counter" >
+        </activity>
+        <activity
+            android:name="com.example.counter.Results"
+            android:label="@string/title_activity_results" >
+        </activity>
+        <activity
+            android:name="com.example.counter.Counters"
+            android:label="@string/title_activity_counters" >
+        </activity>
+        <activity
+            android:name="com.example.counter.All_counters"
+            android:label="@string/title_activity_all_counters" >
+        </activity>
+        <activity
+            android:name="com.example.counter.Save_data"
+            android:label="@string/title_activity_save_data" >
+        </activity>
+        <activity
+            android:name="com.example.counter.ResultsActivity"
+            android:label="@string/title_activity_results" >
+        </activity>
+    </application>
+
+</manifest>
