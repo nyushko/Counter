@@ -35,24 +35,16 @@ public class Edit_counter extends Activity {
 		counterList = new ArrayList<String>(Arrays.asList(add_data
 				.loadFromFile(getApplicationContext())));
 		for (String entry : counterList) {
-			// for (String j : i.split("\\W+")){
-			// String j = (i.replaceAll("\\s","").split("\\|"))[1];
 			LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
 					LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
 			params.weight = 1.0f;
 			LinearLayout single_counter_view = new LinearLayout(this);
 			single_counter_view.setOrientation(LinearLayout.VERTICAL);
 			counter_edit_view = new LinearLayout(this);
-			// single_counter_view.setId('fff');
-			// current_count = 0;
 			final String[] counter_name = entry.split("\\|+");
 			Button new_button = new Button(this);
-			// new_button.setLayoutParams(params);
 			new_button.setText(counter_name[1].trim());
 			new_button.setTag(counter_name[0]);
-			// new_button.setId(i);
-			// new_text = new TextView(this);
-			// new_text.setText(Integer.toString(current_count));
 			single_counter_view.addView(new_button);
 			edit_text = new EditText(getApplicationContext());
 			edit_text.setText(new_button.getText());
@@ -66,7 +58,6 @@ public class Edit_counter extends Activity {
 			save_button.setTag(counter_name[0]);
 			save_button.setText("Save");
 			counter_edit_view.addView(save_button);
-			// single_counter_view.addView(new_text);
 			single_counter_view.addView(counter_edit_view);
 			edit_counters_view.addView(single_counter_view);
 			i = i + 1;
@@ -76,26 +67,6 @@ public class Edit_counter extends Activity {
 				public void onClick(View v) {
 					// TODO Auto-generated method stub
 					Button current_button = (Button) v;
-
-					/*
-					 * LinearLayout button_Layout = (LinearLayout)
-					 * ((LinearLayout) v .getParent()).getChildAt(1); EditText
-					 * counter_name_edit = (EditText) button_Layout
-					 * .getChildAt(0); Log.d("Counter Entry",
-					 * counterList.get(current_button.getId()).toString());
-					 * Log.d("Counter List Before", counterList.toString());
-					 * counterList.set(current_button.getId(), current_button
-					 * .getTag().toString() + " | " +
-					 * counter_name_edit.getText().toString());
-					 * Log.d("Counter List After", counterList.toString());
-					 */
-
-					// new_text = (TextView) current_button.getChildAt(1);
-					// current_count =
-					// Integer.parseInt(new_text.getText().toString()) + 1;
-					// new_text.setText(Integer.toString(current_count));
-					// Log.d("ID", new_text.getText().toString());
-					// getApplicationContext().deleteFile("nadineisawesome.sav");
 
 				}
 			});
@@ -119,7 +90,6 @@ public class Edit_counter extends Activity {
 											.getId()));
 					add_data.saveResultsFile(counter_name_edit.getText().toString(), 
 							new Date(System.currentTimeMillis()), getApplicationContext());
-					// edit_counters_view.removeAllViews();
 					getApplicationContext().deleteFile("nadineisawesome.sav");
 					for (String counter : counterList) {
 						add_data.saveInFile(counter, getApplicationContext());

@@ -13,6 +13,7 @@ import android.widget.ListView;
 
 public class MainActivity extends Activity {
 	
+	//file for saving only current info
 	protected static final String FILENAME = "file.sav";
 	private EditText bodyText;
 	private ListView oldCounters;
@@ -22,7 +23,6 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		//getApplicationContext().deleteFile("nadineisawesome.sav");
 		/** When click on COUNTER  button, go into the counter activity*/
 		Button increment_counter = (Button) findViewById(R.id.increment_counter);
 		increment_counter.setOnClickListener(new View.OnClickListener() {

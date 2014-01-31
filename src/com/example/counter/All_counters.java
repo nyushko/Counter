@@ -33,24 +33,17 @@ public class All_counters extends Activity {
 		counterList = new ArrayList<String>(Arrays.asList(add_data
 				.loadFromFile(getApplicationContext())));
 		for (String entry : counterList) {
-			// for (String j : i.split("\\W+")){
-			// String j = (i.replaceAll("\\s","").split("\\|"))[1];
 			LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
 					LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
 			params.weight = 1.0f;
 			LinearLayout single_counter_view = new LinearLayout(this);
-			// single_counter_view.setId('fff');
 			final String[] counter_name = (entry.split("\\|+"));
-			//Log.d(counter_name[1], counter_name[2]);
-			//Log.d(counter_name[1] + counter_name[0], counter_name[2].replace("\\W+", ""));
 			current_count = Integer.parseInt(counter_name[2].replace(" ", ""));
 			new_button = new Button(this);
 			new_button.setLayoutParams(params);
 			new_button.setId(current_count);
 			new_button.setText(counter_name[1]);
 			new_button.setTag(counter_name[0]);
-			// new_button.setTag(current_count);
-			// new_button.setId(i);
 			new_text = new TextView(this);
 			new_text.setId(i);
 			new_text.setText(Integer.toString(current_count));
@@ -82,9 +75,7 @@ public class All_counters extends Activity {
 					}
 				}
 			});
-			// }
-			// Button new_button = new Button(getApplicationContext());
-			// new_button.setText((i.split("|"))[1]);
+
 		}
 	}
 

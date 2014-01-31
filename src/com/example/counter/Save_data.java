@@ -17,7 +17,9 @@ import android.view.Menu;
 
 public class Save_data {
 	
+	//file for saving current info
 	protected static final String FILENAME = "nadineisawesome.sav";
+	//file for saving all info
 	protected static final String FILENAME_FULL = "alldata.sav";
 
 	protected String[] loadFromFile(Context context) {

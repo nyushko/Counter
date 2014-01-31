@@ -31,12 +31,9 @@ public class Reset_counter extends Activity {
 		counterList = new ArrayList<String>(Arrays.asList(add_data
 				.loadFromFile(getApplicationContext())));
 		for (String entry : counterList) {
-			// for (String j : i.split("\\W+")){
-			// String j = (i.replaceAll("\\s","").split("\\|"))[1];
 			final String[] counter_name = entry.split("\\|+");
 			LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
 					LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
-			// params.weight = 1.0f;
 			LinearLayout single_counter_view = new LinearLayout(this);
 			single_counter_view.setOrientation(LinearLayout.VERTICAL);
 			single_counter_view.setId(Integer.parseInt(counter_name[2].replace(" ", "")));

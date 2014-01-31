@@ -44,8 +44,6 @@ public class ResultsActivity extends Activity {
 				try {
 					SimpleDateFormat df = new SimpleDateFormat("EEE MMM dd kk:mm:ss z yyyy", Locale.ENGLISH);
 					Date date =  df.parse(search_term[1].trim());
-					//SimpleDateFormat sdf = new SimpleDateFormat("MMM dd,yyyy");
-			        //Date resultdate = new Date(date.getTime());
 					Log.d("Date", new SimpleDateFormat("MMM dd yyyy").format(date));
 					if(!Integer.toString(date.getMonth()).isEmpty()){
 						String month = new SimpleDateFormat("MMM").format(date);
@@ -133,7 +131,6 @@ public class ResultsActivity extends Activity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.results, menu);
 		return true;
 	}
