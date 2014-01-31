@@ -39,7 +39,7 @@ public class Edit_counter extends Activity {
 			// String j = (i.replaceAll("\\s","").split("\\|"))[1];
 			LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
 					LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
-			// params.weight = 1.0f;
+			params.weight = 1.0f;
 			LinearLayout single_counter_view = new LinearLayout(this);
 			single_counter_view.setOrientation(LinearLayout.VERTICAL);
 			counter_edit_view = new LinearLayout(this);
@@ -48,7 +48,7 @@ public class Edit_counter extends Activity {
 			final String[] counter_name = entry.split("\\|+");
 			Button new_button = new Button(this);
 			// new_button.setLayoutParams(params);
-			new_button.setText(counter_name[1]);
+			new_button.setText(counter_name[1].trim());
 			new_button.setTag(counter_name[0]);
 			// new_button.setId(i);
 			// new_text = new TextView(this);
@@ -56,6 +56,8 @@ public class Edit_counter extends Activity {
 			single_counter_view.addView(new_button);
 			edit_text = new EditText(getApplicationContext());
 			edit_text.setText(new_button.getText());
+			edit_text.setLayoutParams(params);
+			edit_text.setTextColor(getResources().getColor(android.R.color.black));
 			edit_text.setId(i);
 			counter_edit_view.addView(edit_text);
 			Button save_button = new Button(this);

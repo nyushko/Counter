@@ -24,16 +24,23 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f080011;
+        public static final int action_settings=0x7f08001b;
         public static final int add_counter=0x7f080007;
         public static final int add_counter_button=0x7f080001;
         public static final int add_counter_name=0x7f080000;
         public static final int all_counters_scroll=0x7f080002;
         public static final int all_counters_view=0x7f080003;
+        public static final int counter_name=0x7f080011;
+        public static final int day=0x7f08001a;
+        public static final int day_layout=0x7f080019;
         public static final int edit_counter=0x7f080009;
         public static final int edit_counters_scroll=0x7f080004;
         public static final int edit_counters_view=0x7f080005;
+        public static final int hour=0x7f080018;
+        public static final int hour_layout=0x7f080017;
         public static final int increment_counter=0x7f080006;
+        public static final int month=0x7f080014;
+        public static final int month_layout=0x7f080013;
         public static final int remove_counter=0x7f080008;
         public static final int remove_counters_scroll=0x7f08000c;
         public static final int remove_counters_view=0x7f08000d;
@@ -42,6 +49,9 @@ public final class R {
         public static final int reset_counter_view=0x7f08000f;
         public static final int results=0x7f08000b;
         public static final int results_view=0x7f080010;
+        public static final int scrollView1=0x7f080012;
+        public static final int year=0x7f080016;
+        public static final int year_layout=0x7f080015;
     }
     public static final class layout {
         public static final int activity_add_counter=0x7f030000;
